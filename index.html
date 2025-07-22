@@ -1,33 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>testing with both chat</title>
-<meta charset="UTF-8">
-
-  <!-- CRM tracking code -->
-
+  <title>Neora Freshworks Test External Form</title>
+<!-- CRM tracking code -->
 <script
 src='//fw-cdn.com/1339706/2343303.js'
 chat='false'>
 </script>
-
 </head>
 <body>
-	
-
-<!-- Navbar (sit on top) -->
-
-<form >
+  <form name="neora-freshworks-test-external" action="#" method="post" autocomplete="off">
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <br><br>
-    <input type="submit" value="Submit">
+    <input type="text" id="email" name="email"><br><br>
+    
+    <label for="customer_id">Customer ID:</label>
+    <input type="text" id="customer_id" name="customer_id"><br><br>
+    
+    <button type="submit">Submit</button>
   </form>
 
-  <!-- Freshchat script -->
-
-
-
+<!-- chat code -->
 <script>
   function initFreshChat() {
     window.fcWidget.init({
@@ -42,11 +34,5 @@ chat='false'>
   window.addEventListener?window.addEventListener("load",initiateCall,!1):
   window.attachEvent("load",initiateCall,!1);
 </script> 
-
-
-
-
-
-  
 </body>
 </html>
